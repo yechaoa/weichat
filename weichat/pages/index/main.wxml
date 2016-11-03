@@ -1,0 +1,13 @@
+<view><button bindtap="jump">跳转</button></view>
+<view class="main">微信小程序</view>
+<view><button bindtap="toast">Toast</button></view>
+<view><button bindtap="dialog">Dialog</button></view>
+<view><button bindtap="sheet">上拉菜单</button></view>
+<view class="page__bd">
+    <view class="section section_gap" wx:for="{{array}}" wx:for-item="item">
+      <view class="section__title">{{item.text}}</view>
+      <view class="section__ctn">
+        <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="{{item.mode}}" src="{{src}}"></image>
+      </view>
+    </view>
+  </view>
